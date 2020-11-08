@@ -1,4 +1,3 @@
 package simpleTests;
 
-public interface Regression {
-}
+public interface Regression{}

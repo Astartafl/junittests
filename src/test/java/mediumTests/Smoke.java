@@ -1,4 +1,3 @@
 package mediumTests;
 
-public interface Smoke {
-}
+public interface Smoke{}

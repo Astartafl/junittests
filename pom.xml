@@ -13,8 +13,38 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+  <dependencies>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.3.0</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.1</version>
+      <scope>test</scope>
+    </dependency>
 
- 
+  </dependencies>
+  <build>
+    <plugins>
+     <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <parallel>methods</parallel>
+          <threadCount>10</threadCount>
+        </configuration>
+     </plugin>
+
+    </plugins>
+  </build>
+
+
 
 
 </project>

@@ -1,4 +1,3 @@
 package hardTests;
 
-public interface Regular {
-}
+public interface Regular{}
